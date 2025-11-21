@@ -14,7 +14,7 @@ function init() {
     const marker = L.marker([43.34214, 5.412821], { icon: Icon }).addTo(map);
 
     // Animation marqueur + texte
-    marker.bindPopup(`JY2h-npm-01`);
+    marker.bindPopup(`JY2H-npm-01`);
     marker.on('mouseover', function () {this.openPopup();});
     marker.on('mouseout', function () {this.closePopup();});
 
