@@ -7,26 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - JY2H</title>
 
+    <!--- FAVICON -->
     <link rel="icon" type="image/png" href="public/img/jy2h_icon.png">
 
+    <!--- META DESCRIPTION -->
     <meta name="description" content="JY2H - Site officiel, Infos, projets et contenus.">
     <meta name="description" content="Capteur, IUT, Marseille, Mesures-Physiques, Projets, Particules Fines, Marseille, JY2H">
 
+    <!--- META LINK -->
     <meta property="og:title" content="JY2H">
-    <meta property="og:description" content="Suivre l'actualité de JY2H.">
+    <meta property="og:description" content="Suivre en direct les datats du JY2h-npm-01.">
     <meta property="og:image" content="public/img/jy2h_icon.png">
     <meta property="og:type" content="website">
 
+    <!--- LINK CSS -->
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/container.css">
-    <link rel="stylesheet" href="public/css/section.css">
+    <link rel="stylesheet" href="public/css/map.css">
     <link rel="stylesheet" href="public/css/footer.css">
-
-
+    
+    <!--- CARTE LEAFTLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="public/js/map.js"></script>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
     <div class="header-logo">JY2H</div>
 
@@ -38,43 +46,38 @@
     </nav>
     </header>
 
+    <!-- PAGE TITLE -->
     <h1 class="page-title">Data du JY2H-npm-01</h1>
 
+    <!-- CONTAINER -->
     <div class="container">
-
-        <div class="carte">
-            <iframe src="https://umap.openstreetmap.fr/fr/map/anonymous-edit/1316619:sJrzOYH5jbSk0ew3r3HrK9rAVXxDY5-ZJUhKSo9o3AU" width="100%" height="400" frameborder="0">
-
-            </iframe>
+         <!-- map -->
+        <div class="map">
+            
         </div>
-
+        <!-- PM panel -->
         <div class="pm-panel">
-
             <div class="pm-box">
                 <img src="public/img/pm1.0_icon.png" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM1.0</span>
             </div>
-
             <div class="pm-box">
                 <img src="public/img/pm2.5_icon.png" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM2.5</span>
             </div>
-
             <div class="pm-box" href="informations.html">
                 <img src="public/img/pm10_icon.png" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM10</span>
             </div>
-
         </div>
-
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
-
-    <span class="footer-title">JY2H© 2025</span>
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="crédits.html">Crédits</a>
-        <a href="contact.html">Contact</a>
+        <span class="footer-title">JY2H© 2025</span>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="crédits.html">Crédits</a>
+            <a href="contact.html">Contact</a>
     </footer>
 
 </body>
