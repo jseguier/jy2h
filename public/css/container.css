@@ -1,0 +1,61 @@
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 80px;
+}
+
+.carte {
+    width: 700px;
+    height: 450px;
+    background: #1a1a1a;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-card h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #cccccc;
+}
+
+.pm-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pm-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1a1a1a;
+    padding: 15px 20px;
+    border-radius: 14px;
+    min-width: 220px;
+    box-shadow: 0 0 12px rgba(255,255,255,0.05);
+    transition: 0.2s;
+}
+
+.pm-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 18px rgba(255,255,255,0.08);
+}
+
+.pm-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(4990%) hue-rotate(351deg) brightness(96%) contrast(110%);
+}
+
+/* Texte PM */
+.pm-label {
+    font-size: 20px;
+    font-weight: 600;
+}
