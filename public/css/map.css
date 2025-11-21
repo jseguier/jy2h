@@ -1,7 +1,7 @@
 .map {
     height: 400px;
     width: 700px;
-    border-radius: 58px;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     display: flex;
     justify-content: center;
