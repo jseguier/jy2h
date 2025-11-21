@@ -1,7 +1,17 @@
 
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: #313131;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
 .container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +21,8 @@
 
 .carte {
     width: 700px;
-    height: 450px;
-    background: #1a1a1a;
-    border-radius: 18px;
+    background: #ffffff;
+    border-radius: 58px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     display: flex;
     justify-content: center;
@@ -36,28 +45,26 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #1a1a1a;
+    background: #ffffff;
     padding: 15px 20px;
     border-radius: 14px;
     min-width: 220px;
-    box-shadow: 0 0 12px rgba(255,255,255,0.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     transition: 0.2s;
 }
 
 .pm-box:hover {
     transform: translateX(5px);
-    box-shadow: 0 0 18px rgba(255,255,255,0.08);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
 }
 
 .pm-icon {
-    width: 28px;
-    height: 28px;
-    filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(4990%) hue-rotate(351deg) brightness(96%) contrast(110%);
+    width: 60px;
+    height: 60px;
 }
 
 /* Texte PM */
 .pm-label {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
-
