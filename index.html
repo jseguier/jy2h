@@ -32,9 +32,14 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="public/js/map.js"></script>
+
+    
+
+
 </head>
 
 <body onload="init()">
+
     <!-- HEADER -->
     <header class="header">
     <img class ="header-icon" src="public/img/jy2h_icon.png">
@@ -58,17 +63,25 @@
         <!-- PM panel -->
         <div class="pm-panel">
             <div class="pm-box">
+
                 <img src="public/img/pm1.0_motion.gif" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM1.0</span>
-                <span class="pm-sub-lab">test</span>
+                <span id="pm1.0-value" class="pm-value">--</span>
+
             </div>
             <div class="pm-box">
+
                 <img src="public/img/pm25_motion.gif" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM2.5</span>
+                <span id="pm2.5-value" class="pm-value">--</span>
+
             </div>
             <div class="pm-box" href="informations.html">
+
                 <img src="public/img/pm10_motion.gif" href="#" class="pm-icon" alt="logo pm">
                 <span class="pm-label">PM10</span>
+                <span id="pm10-value" class="pm-value">--</span>
+
             </div>
         </div>
     </div>
@@ -80,6 +93,9 @@
             <a href="crédits.html">Crédits</a>
             <a href="contact.html">Contact</a>
     </footer>
+
+    <!--- API MAISON JY2H -->
+    <script src="public/js/mesures.js"></script>
 
 </body>
 
