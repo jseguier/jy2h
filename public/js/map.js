@@ -9,7 +9,7 @@ function init() {
     mainLayer.addTo(map);
 
     // Marqueur JY2H-npm-01
-    const Icon = L.icon({iconUrl: 'public/img/JY2H-npm_ping.png', iconSize: [30, 30], popupAnchor: [0, -40]});
+    const Icon = L.icon({iconUrl: 'https://github.com/jseguier/jy2h/blob/main/public/img/JY2h-npm_ping.png', iconSize: [30, 30], popupAnchor: [0, -40]});
 
     const marker = L.marker([43.34214, 5.412821], { icon: Icon }).addTo(map);
 
