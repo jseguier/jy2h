@@ -78,6 +78,9 @@ function buildLineChart(canvasId, label, points, color, configY = {}) {
                 data: values,
                 tension: 0.25,
                 borderWidth: 2,
+                pointRadius: 3,
+                pointHoverRadius: 5,
+                pointHitRadius: 8,
                 pointRadius: 0,
                 borderColor: color,
             }]
