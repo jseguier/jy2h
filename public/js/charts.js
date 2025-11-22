@@ -1,3 +1,5 @@
+
+// CHATGPT GENERATED PAS LE CHOIX
 // ==========================
 //  CONFIG GLOBALE CHART.JS
 // ==========================
@@ -222,7 +224,7 @@ async function updateDashboard() {
             "PM1.0 (µg/m³)",
             pm1Series,
             "#4bc0c0",
-            { min: 0, max: 80 }
+            { min: 0, max: 30 }
         );
 
         buildLineChart(
@@ -230,7 +232,7 @@ async function updateDashboard() {
             "PM2.5 (µg/m³)",
             pm25Series,
             "#ff9f40",
-            { min: 0, max: 80 }
+            { min: 0, max: 30 }
         );
 
         buildLineChart(
@@ -238,7 +240,7 @@ async function updateDashboard() {
             "PM10 (µg/m³)",
             pm10Series,
             "#ff6384",
-            { min: 0, max: 150 }
+            { min: 0, max: 50 }
         );
 
         buildLineChart(
