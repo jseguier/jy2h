@@ -85,17 +85,33 @@
     </div>
 
     <!-- CHARTS CONTAINER -->
-    <div class="charts-container"> 
-        <canvas id="pm_chart1.0-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-        <canvas id="pm_chart2.5-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-        <canvas id="pm_chart10-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-
-        <canvas id="temp-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-        <canvas id="hum-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-        <canvas id="rssi-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
-    
-    
-    </div>   
+    <section class="charts-container">
+        <div class="charts">
+            <h3>PM1.0</h3>
+            <canvas id="pm1-chart" class="pm-chart" aria-label="pm1 chart" role="img"></canvas>
+        </div>
+        <div class="charts">
+            <h3>PM2.5</h3>
+            <canvas id="pm25-chart" class="pm-chart" aria-label="pm2.5 chart" role="img"></canvas>
+        </div>
+        <div class="charts">
+            <h3>PM10</h3>
+            <canvas id="pm10-chart" class="pm-chart" aria-label="pm10 chart" role="img"></canvas>
+        </div>
+        <div class="charts">
+            <h3>SENSOR TEMP</h3>
+            <canvas id="temp-chart" class="pm-chart" aria-label="temp chart" role="img"></canvas>
+        </div>
+        <div class="charts">
+            <h3>SENSOR HUM</h3>
+            <canvas id="hum-chart" class="pm-chart" aria-label="hum chart" role="img"></canvas>
+        </div>
+        <div class="charts">
+            <h3>SENSOR RSSI</h3>
+            <canvas id="rssi-chart" class="pm-chart" aria-label="rssi chart" role="img"></canvas>
+        </div>
+    </section>
+ 
 
     <!--- API MAISON JY2H -->
     <script src="public/js/mesures.js"></script>

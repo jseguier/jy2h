@@ -1,28 +1,46 @@
-body {
-    background: #ffffff;
-    flex : 1;
-}
-
 .charts-container {
-    gap: 40px;
-    margin-bottom: 60px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 30px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
+
+@media (max-width: 900px) {
+    .charts-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .charts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.charts {
+    background: #151515;
+    border-radius: 14px;
+    border: 1px solid #2a2a2a;
+    padding: 16px 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 220px;
+}
+
+.charts h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
 .pm-chart {
-    background: #111418;
-    border: 1px solid #1e232a;
-    border-radius: 16px;
-    padding: 20px;
-    height: 300px;
-    width: 637px;
-
-}
-
-section {
-    margin-top: 200px;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-bottom: 300px;
+    flex: 1;
+    width: 100%;
 }

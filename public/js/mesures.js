@@ -86,3 +86,5 @@ async function mesures() {
 mesures();
 
 setInterval(mesures, 30000);
+
+
