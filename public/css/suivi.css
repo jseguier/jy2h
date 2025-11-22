@@ -1,0 +1,45 @@
+body {
+    background-color: #151515;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background: #151515;
+    border-radius: 14px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.items {
+    flex: 1 1 140px;
+    min-width: 120px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.items .label {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.items .value {
+    color :rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.items .unit {
+    font-size: 0.75rem;
+    color: #777;
+}
