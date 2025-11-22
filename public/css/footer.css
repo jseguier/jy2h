@@ -11,6 +11,9 @@
     color: #cccccc;
     font-size: 0.9rem;
     margin-top: 50px;
+    margin: 0;
+    position: fixed;
+    z-index: 1000;
 }
 
 .footer a {

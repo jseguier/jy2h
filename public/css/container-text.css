@@ -1,0 +1,28 @@
+
+* {
+    transition: all 0.45s ease 0s;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    position: relative;
+    margin : 0 auto;
+    margin-top : 100px;
+    margin-bottom : 100px;
+    
+}
+
+
+.container-text {
+    justify-content: center;
+    display: flex;
+}
+
+.espace {
+    height: 40px;
+}
+

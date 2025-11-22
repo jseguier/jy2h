@@ -1,4 +1,28 @@
 body {
-    background: #000000;
-    flex: 1;
+    background: #ffffff;
+    flex : 1;
+}
+
+.charts-container {
+    gap: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.pm-chart {
+    background: #111418;
+    border: 1px solid #1e232a;
+    border-radius: 16px;
+    padding: 20px;
+    height: 300px;
+    width: 637px;
+
+}
+
+section {
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 300px;
 }

@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="public/css/footer.css">
     <link rel="stylesheet" href="public/css/charts.css"> 
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="public/js/charts.js"></script>
+
 </head>
 
 <body>
@@ -37,6 +40,8 @@
     <img class ="header-icon" src="public/img/jy2h_icon.png">
     <div class="header-logo">JY2H</div>
 
+    
+
     <nav class="header-nav">
         <a href="index.html">Accueil</a>
         <a href="projet.html">Projet</a>
@@ -45,12 +50,19 @@
     </nav>
     </header>
 
+    <!-- CHARTS CONTAINER -->
+    <div class="charts-container"> 
+        <canvas id="pm_chart1.0-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
+        <canvas id="pm_chart2.5-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
+        <canvas id="pm_chart10-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
 
-    <!-- CONTAINER -->
-    <div class="container">
+        <canvas id="temp-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
+        <canvas id="hum-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
+        <canvas id="rssi-chart" class="pm-chart" aria-label="pm chart" role="img"></canvas>
+    
+    
+    </div>   
 
-
-    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -59,6 +71,9 @@
             <a href="crédits.html">Crédits</a>
             <a href="contact.html">Contact</a>
     </footer>
+
+    
+    
 
 </body>
 
