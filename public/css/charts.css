@@ -29,6 +29,7 @@
     flex-direction: column;
     gap: 10px;
     min-height: 220px;
+    height: 270px;
 }
 
 .charts h3 {
