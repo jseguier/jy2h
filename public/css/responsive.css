@@ -1,6 +1,6 @@
 
 /* RESPONSIVE CSS AFFICHAGE MAC 13p */
-@media (max-width: 1600px) {
+@media screen and (max-width: 1440px) and (min-width: 1100px) {
     section {
         max-width : 1000px;
     }
