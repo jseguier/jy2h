@@ -1,4 +1,11 @@
 
+/* RESPONSIVE CSS AFFICHAGE MAC 13p */
+@media (max-width: 1600px) {
+    section {
+        max-width : 1000px;
+    }
+}
+
 /* HEADER + NAVBAR(DROPDOWN) */
 @media (max-width: 900px) {
     .navbar .nav_links, .navbar .action_btn {
