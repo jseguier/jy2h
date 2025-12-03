@@ -8,6 +8,12 @@
     .col_left, .col_right {
         max-width: 800px;
     }
+
+    .section_columns {
+        margin: 0;
+    }
+
+    
 }
 
 /* HEADER + NAVBAR(DROPDOWN) */
@@ -39,5 +45,10 @@
         width: 100vw !important;
         margin: 0;
         padding: 0;
+    }
+
+    .section_columns {
+        flex-direction: column;
+        gap: 50px;
     }
 }
