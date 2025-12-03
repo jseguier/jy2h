@@ -1,0 +1,32 @@
+
+/* HEADER + NAVBAR(DROPDOWN) */
+@media (max-width: 900px) {
+    .navbar .nav_links, .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn, .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* SECTION MAP */
+@media (max-width: 768px) {
+    #map {
+        width: 100vw !important;
+        height: 75vh; /* ajuste comme tu veux */
+    }
+
+    .map-container {
+        width: 100vw !important;
+        margin: 0;
+        padding: 0;
+    }
+}

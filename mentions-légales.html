@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JY2H - Mentions légales</title>
+
+    <link rel="icon" type="image/png" href="public/img/logo-jy2h.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/section.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
+    <link rel="stylesheet" href="public/css/ml.css">
+
+    
+
+</head>
+
+<body>
+    
+     <!-- HEADER -->
+      <header>
+        <div class="navbar">
+            <div class="nav_logo"><a href="#">JY2H</a></div>
+            <ul class="nav_links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="informations.html">Informations</a></li>
+            </ul>
+            <a href="#" class="action_btn">Se connecter</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="informations.html">Informations</a></li>
+            <li><a href="#" class="action_btn">Se connecter</a></li>
+        </div>
+      </header>
+
+      <!-- SECTION -->
+       <section>
+            <div class="ml-container">
+                <h3>Mentions légales</h3>
+                <div class="ml-title">Propriétaire du site internet</div>
+                <div class="ml-content">
+                    <li><a>Justin SÉGUIER</a></li>
+                    <li><a>Projet académique - JY2H</a></li>
+                    <li><a>IUT Aix-Marseille, site Saint-Jérôme - Département Mesures Physiques</a></li>
+                    <li><a>Email : justin.seguier@etu.univ-amu.fr</a></li>
+                </div>
+
+                <hr>
+
+                <div class="ml-title">Hébergement du site internet</div>
+                <div class="ml-content">
+                    <li><a>GitHub, Inc</a></li>
+                    <li><a>88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</a></li>
+                    <li><a>Site : https://github.com</a></li>
+                    <li><a>Téléphone : +1 (877) 448-4820</a></li>
+                </div>
+
+                <hr>
+
+                <div class="ml-title">Propriété Intellectuelle</div>
+                <div class="ml-content">
+                    <a>L’ensemble du contenu du site (textes, images, logos, éléments graphiques, code) est la propriété exclusive de Justin SÉGUIER et du groupe de projet JY2H, sauf mention contraire. Toute reproduction, modification ou diffusion est interdite sans autorisation préalable.</a>
+                </div>
+
+                <hr>
+
+                <div class="ml-title">Données Personnelles</div>
+                <div class="ml-content">
+                    <p>- Aucune donnée personnelle n’est collectée via ce site.</p>
+                    <p>- Le site n’utilise pas de cookies ou systèmes de suivi.</p>
+                    <p>- Pour toute question, vous pouvez contacter : justin.seguier@etu.univ-amu.fr</p>
+                </div>
+                <hr>
+                <div class="ml-title">Conditions d'utilisation</div>
+                <div class="ml-content">
+                    <p>L’accès au site implique l’acceptation des conditions d’utilisation suivantes :</p>
+                    <p>- L’utilisateur s’engage à ne pas perturber le bon fonctionnement du site.</p>
+                    <p>- Le contenu peut être modifié ou retiré à tout moment, sans préavis.</p>
+                    <p>- L’accès au site peut être suspendu pour maintenance ou mise à jour.</p>
+                </div>
+                
+            </div>
+        </section>
+
+      <!-- FOOTER -->
+       <footer>
+        <div class="footer-content">
+            <p>JY2H &copy; 2026. Tous droits réservés.</p>
+            <ul class="footer_links">
+                <li><a href="mentions-légales.html">Mentions légales</a></li>
+                <li><a href="#">Crédits</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+       </footer>
+
+      <!-- SCRIPT TOGGLE BUTTON (HEADER)-->
+      <script>
+        toggleBTN = document.querySelector('.toggle_btn');
+        toggleBTN_ICON = document.querySelector('.toggle_btn i');
+        dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBTN.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBTN_ICON.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        }
+      </script>
+
+</body>
+
+</html>

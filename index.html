@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JY2H - Accueil</title>
+
+    <link rel="icon" type="image/png" href="public/img/logo-jy2h.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/section.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
+
+    <!-- MAP 3D-->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css"/>
+    <link rel="stylesheet" href="public/css/map.css">
+    <script src="https://js.arcgis.com/4.34/"></script>
+    <script defer src="public\js\map.js"></script>
+    
+
+</head>
+
+<body>
+    
+     <!-- HEADER -->
+      <header>
+        <div class="navbar">
+            <div class="nav_logo"><a href="#">JY2H</a></div>
+            <ul class="nav_links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="informations.html">Informations</a></li>
+            </ul>
+            <a href="#" class="action_btn">Se connecter</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="informations.html">Informations</a></li>
+            <li><a href="#" class="action_btn">Se connecter</a></li>
+        </div>
+      </header>
+
+      <!-- SECTION -->
+       <section>
+        <div class="section_title">
+            <p><strong>JY2H</strong> est une entité composée de <strong>4</strong> étudiants de <strong>BUT3 Mesures Physiques</strong>, réunis autour d'un projet académique visant à développer une <strong>solution IoT</strong> dédiée au <strong>suivi des particules fines</strong> en <strong>extérieur</strong>.</p>
+        </div>
+
+        <!-- AFFICHAGE COLONNES-->
+        <div class="section_columns">
+
+            <!-- COLONNE GAUCHE - MAP -->
+            <div class="col_left">
+                <div class="section_map">
+                    <div id="viewDiv"></div>
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE - PM -->
+            <div class="col_right">
+                <div class="pm-panel">
+
+                    <div class="pm-box">
+                        <img src="public/img/pm1.0_motion.gif" href="#" class="pm-icon" alt="logo pm">
+                        <span class="pm-label">PM1.0</span>
+                    </div>
+
+                    <div class="pm-box">
+                        <img src="public/img/pm2.5_motion.gif" href="#" class="pm-icon" alt="logo pm">
+                        <span class="pm-label">PM2.5</span>
+                    </div>
+
+                    <div class="pm-box" href="informations.html">
+                        <img src="public/img/pm10_motion.gif" href="#" class="pm-icon" alt="logo pm">
+                        <span class="pm-label">PM10</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+       </section>
+
+      <!-- FOOTER -->
+       <footer>
+        <div class="footer-content">
+            <p>JY2H &copy; 2026. Tous droits réservés.</p>
+            <ul class="footer_links">
+                <li><a href="mentions-légales.html">Mentions légales</a></li>
+                <li><a href="credits.html">Crédits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+       </footer>
+
+      <!-- SCRIPT TOGGLE BUTTON (HEADER)-->
+      <script>
+        toggleBTN = document.querySelector('.toggle_btn');
+        toggleBTN_ICON = document.querySelector('.toggle_btn i');
+        dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBTN.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBTN_ICON.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        }
+      </script>
+
+</body>
+
+</html>

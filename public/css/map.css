@@ -1,0 +1,21 @@
+.section_map {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#viewDiv {
+    position: absolute;
+    inset: 0;
+}
+
+.map_legend {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000000;
+    text-align: center;
+    opacity: 0.85;
+}
