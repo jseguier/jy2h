@@ -16,7 +16,7 @@
     
 }
 
-/* HEADER + NAVBAR(DROPDOWN) */
+/* HEADER + NAVBAR(DROPDOWN) TEL */
 @media (max-width: 900px) {
     .navbar .nav_links, .navbar .action_btn {
         display: none;
@@ -34,7 +34,7 @@
     }
 }
 
-/* SECTION MAP */
+/* SECTION MAP TEL */
 @media (max-width: 768px) {
 
     .section_columns {
