@@ -40,14 +40,15 @@
     .section_columns {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        justify-content: center;
+        gap: 20px;
         width: 100%;
         padding: 20px 0;
     }
 
     .col_left, .col_right {
-        width: 100% !important;
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .col_left {
@@ -56,7 +57,15 @@
         justify-content: center;
     }
 
+    .pm-panel{
+        width: 100%;
+        align-items: center;
+        gap: 14px;
+     }
+
     .pm-box {
-        display: flex;
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
     }
 }

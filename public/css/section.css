@@ -18,22 +18,24 @@ section {
 }
 
 .section_columns {
+    justify-content: center;
     align-items: center;
     display: flex;
     gap: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .col_left {
-    flex: 2;
-    width: 1000px;
+     flex: 0 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
 .col_right {
-    flex: 1;
-    width: 250px;
+    display: flex;
+    justify-content: center;
 }
 
 .pm-panel {
@@ -49,7 +51,8 @@ section {
     background: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    min-width: 220px;
+    max-width: 260px;
+    min-width: 260px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     transition: 0.2s;
 }
@@ -69,6 +72,18 @@ section {
     margin-left: 10px;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.pm-value {
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 11px;
+}
+
+.pm-unit {
+    font-size: 17px;
+    margin-left: 11px;
+    color: rgb(70, 70, 70);
 }
 
 .section_title_pm {
